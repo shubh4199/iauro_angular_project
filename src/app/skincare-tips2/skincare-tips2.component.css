@@ -1,0 +1,117 @@
+.header {
+    color: white;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.header-space {
+    width: 100%;
+    height: 130px;
+}
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Century Gothic",sans-serif;
+}
+
+.title {
+    width: 70%;
+    height: 30px;
+    margin-top: 30px;
+}
+.title a {
+    text-decoration: none;
+    color: black;
+}
+.title span {
+    color: #7c7873;
+}
+
+.page-title {
+    width: 70%;
+    height: 70px;
+    margin-top: 20px;
+    border-top: #046a38 1px solid;
+    border-bottom: #046a38 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #046a38;
+}
+
+.skincare-blogs {
+    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.skincare-blogs .blog-card {
+    width: 330px;
+    height: 470px;
+    margin-top: 20px;
+}
+.skincare-blogs .blog-card .card-img {
+    width: 100%;
+    height: 230px;
+}
+.skincare-blogs .blog-card .card-img img{
+    width: 100%;
+    height: 230px;
+    transition: all 0.3s ease-in-out 0.2s
+}
+.skincare-blogs .blog-card .card-img img:hover {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    display:block;
+    z-index: 999;
+    transform: scale(1.1);
+}
+.skincare-blogs .blog-card .card-title{
+    margin-top: 20px;
+    text-align: center;
+    color: #84bd00;
+    font-size: 23px;
+    font-weight: bold;
+}
+.skincare-blogs .blog-card .card-text{
+    margin-top: 15px;
+    line-height: 1.5;
+    margin-left: 15px;
+    font-size: 17px;
+}
+.skincare-blogs .blog-card .read-more-btn {
+    width: 100%;
+    height: 20px;
+    margin-top: 15px;
+    text-align: center;
+}
+.skincare-blogs .blog-card .read-more-btn a {
+    font-size: 15px;
+    font-weight: bold;
+    color: #046a38;
+    text-decoration: none;
+}
+
+.next-btn {
+    width: 30%;
+    height: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.next-btn span {
+    margin-left: 20px;
+}
+.next-btn a {
+    text-decoration: none;
+    color: black;
+}

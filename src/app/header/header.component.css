@@ -1,0 +1,92 @@
+.header {
+    background-color: white;
+    width: 100%;
+    height: 130px;
+    border-bottom: 1px solid black;
+    font-family: "Century Gothic",sans-serif;
+    font-size: 20px;
+    margin-top: -10px;
+}
+
+.header-tools {
+    display: flex;
+    flex-direction: row;
+}
+.header-icon {
+    height: 100px;
+    width: 75%; 
+}
+.header-icon img{
+    height: 100px;
+    width: 250px;
+    margin-left: 635px;
+}
+.header-elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.search-bar {
+    margin-left: 30px;
+}
+.search-bar input{
+    height: 30px;
+    width: 200px;
+}
+.profile-icon img {
+    height: 25px;
+    width: 25px;
+    margin-left: 20px;
+}
+.shopping-cart-icon img {
+    height: 25px;
+    width: 25px;
+    margin-left: 20px;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.header-menu div {
+    margin-left: 20px;
+}
+.header-menu .menu-item {
+    font-size: 15px;
+}
+.menu-button {
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    font-family: "Century Gothic",sans-serif;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 230px;
+    z-index: 1;
+}
+.dropdown-menu a:hover {
+    background-color: white;
+    color: black;
+}
+.right-menu:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    margin-left: 0px;
+}
+.right-menu:hover .dropdown-menu .dropdown-menu-item {
+    display: flex;
+}
+
+.menu-item a{
+    text-decoration: none;
+    color: black;
+}

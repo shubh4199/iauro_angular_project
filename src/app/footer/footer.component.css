@@ -1,0 +1,65 @@
+.footer { 
+    width: 1520px;
+    border-top: 1px solid rgb(65, 61, 61);
+    border-bottom: 1px solid rgb(65, 61, 61);
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    font-family: "Century Gothic",sans-serif;
+}
+.footer .unilever-logo {
+    margin-top: 70px;
+    margin-left: 50px;
+    width: 25%;
+}
+.footer .unilever-logo .copyright {
+    margin-top: 220px;
+    color: #156c3c;
+    margin-bottom: 30px;
+}
+.footer .consumer-service {
+    margin-top: 70px;
+    margin-left: 50px;
+    width: 25%;
+    color: #156c3c;
+}
+.footer .consumer-service div {
+    margin-top: 10px;
+}
+.footer .consumer-service div a {
+    text-decoration: none;
+    color: #156c3c;
+}
+.footer .legal {
+    margin-top: 70px;
+    margin-left: 50px;
+    width: 25%;
+    color: #156c3c;
+}
+.footer .legal div {
+    margin-top: 10px;
+}
+.footer .legal div a {
+    text-decoration: none;
+    color: #156c3c;
+}
+.footer .follow-us {
+    margin-top: 70px;
+    margin-left: 50px;
+    width: 25%;
+    color: #156c3c;
+    display: flex;
+    flex-direction: column;
+}
+.footer .follow-us .follow-options {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.footer .follow-us .follow-options .follow-us-option {
+    margin-left: 5px;
+}
+.footer .follow-us .follow-options .follow-us-option img {
+    height: 40px;
+    width: 40px;
+}
