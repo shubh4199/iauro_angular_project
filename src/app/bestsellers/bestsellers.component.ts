@@ -1,3 +1,5 @@
+import { Input } from '@angular/core';
+import { Output } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -11,5 +13,7 @@ export class BestsellersComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
+  @Input('bestSell') bestSeller = document.getElementsByClassName('product-card')
 
 }

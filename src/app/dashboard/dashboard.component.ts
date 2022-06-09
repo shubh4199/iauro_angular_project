@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { BestsellersComponent } from '../bestsellers/bestsellers.component';
 import { CleansersComponent } from '../cleansers/cleansers.component';
+
 
 @Component({
   selector: 'app-dashboard',
@@ -14,7 +16,10 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
+  bestSellers1:HTMLCollectionOf<Element> = document.getElementsByClassName('product-card')
+  
+  
+  
 
   imgCollection: Array<object> = [
     { thumbImage: 'https://d12oh2gzettinl.cloudfront.net/instagram-story/posts/simpleskincareindia/280098718_513716927070864_3936634105726744056_n.jpg'},

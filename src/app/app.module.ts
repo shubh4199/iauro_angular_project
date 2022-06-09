@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { FormsModule } from '@angular/forms';
 import { MatTabsModule } from '@angular/material/tabs';
-import {MatCardModule} from '@angular/material/card';  
+import { LazyLoadImageModule } from 'ng-lazyload-image';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,7 +26,12 @@ import { TrackMyOrderComponent } from './track-my-order/track-my-order.component
 import { SimplePhilosophyComponent } from './simple-philosophy/simple-philosophy.component';
 import { SkincareTipsComponent } from './skincare-tips/skincare-tips.component';
 import { SkincareTips2Component } from './skincare-tips2/skincare-tips2.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';  
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BestsellersShowComponent } from './bestsellers-show/bestsellers-show.component';  
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+import { DemoComponent } from './demo/demo.component';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -47,7 +53,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     TrackMyOrderComponent,
     SimplePhilosophyComponent,
     SkincareTipsComponent,
-    SkincareTips2Component
+    SkincareTips2Component,
+    BestsellersShowComponent,
+    DemoComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +64,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     BrowserAnimationsModule,
     MatTabsModule,
-    MatCardModule
+    InfiniteScrollModule,
+    LazyLoadImageModule,
+    InfiniteScrollModule,
+    NgxSpinnerModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -39,85 +39,586 @@
         <div class="product-showcase">
             <mat-tab-group mat-align-tabs="start">
                 <mat-tab label="Bestsellers">
-                    <ng-image-slider 
-                        [images]="imgCollection" 
-                        [imageSize]="{width: 250, height: 450, space: 10}"
-                        [infinite]="false"
-                        [animationSpeed]="0.3"
-                        [lazyLoading]="true"
-                        [slideImage]="2"
-                    #nav>
-                    </ng-image-slider>
+                    <app-bestsellers-show>
+                    </app-bestsellers-show>
                 </mat-tab>
                 <mat-tab label="Serums">
-                    <ng-image-slider 
-                        [images]="imgCollection" 
-                        [imageSize]="{width: 250, height: 450, space: 10}"
-                        [infinite]="true"
-                        [animationSpeed]="0.3"
-                        [lazyLoading]="true"
-                        [slideImage]="2"
-                    #nav>
-                    </ng-image-slider>
+                    <div class="product-cards">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="offer">Save20%</div>
+                                <img src="assets\image\serums-1-1.webp">
+                                <img class="hover-img" src="assets\image\serums-1-2.webp">
+                            </div>
+                            <div class="product-title">
+                                Simple Booster Serum - 10%<br>Vitamin C+E+F 30ml 
+                            </div>
+                            <div class="MRP">
+                                MRP:<s>₹675</s><b>₹540</b>
+                            </div>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                            <div class="add-to-cart">
+                                <a routerLink="/" routerLinkActive="active">ADD TO CART</a>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="offer">Save20%</div>
+                                <img src="assets\image\serums-2-1.webp">
+                                <img class="hover-img" src="assets\image\serums-2-2.webp">
+                            </div>
+                            <div class="product-title">
+                                Simple Booster Serum - 10%<br>Hemp seed oil + B3 30ml 
+                            </div>
+                            <div class="MRP">
+                                MRP:<s>₹675</s><b>₹540</b>
+                            </div>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                            <div class="add-to-cart">
+                                <a routerLink="/" routerLinkActive="active">ADD TO CART</a>
+                            </div>
+                        </div>
+                
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="offer">Save25%</div>
+                                <img src="assets\image\serums-3-1.webp">
+                                <img class="hover-img" src="assets\image\serums-3-2.webp">
+                            </div>
+                            <div class="product-title">
+                                Simple Booster Serum - 3%<br>Hyaluronic Acid + B5 30ml  
+                            </div>
+                            <div class="MRP">
+                                MRP:<s>₹675</s><b>₹506</b>
+                            </div>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                            <div class="add-to-cart">
+                                <a routerLink="/" routerLinkActive="active">ADD TO CART</a>
+                            </div>
+                        </div>
+                
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="sold-out">Sold out</div>
+                                <img src="assets\image\serums-4-1.webp">
+                                <img class="hover-img" src="assets\image\serums-4-2.webp">
+                            </div>
+                            <div class="product-title">
+                                Simple Booster Serum - 10%<br>Niacinamide 30ml 
+                            </div>
+                            <div class="MRP">
+                                MRP:<s>₹675</s><b>₹540</b>
+                            </div>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                            <div class="sold-out-btn">
+                                <a routerLink="/" routerLinkActive="active">SOLD OUT</a>
+                            </div>
+                        </div>
+                        <div class="product-card"></div>
+                    </div>
                 </mat-tab>
                 <mat-tab label="Cleansers">
-                    <ng-image-slider 
-                        [images]="imgCollection" 
-                        [imageSize]="{width: 250, height: 450, space: 10}"
-                        [infinite]="true"
-                        [animationSpeed]="0.3"
-                        [lazyLoading]="true"
-                        [slideImage]="2"
-                    #nav>
-                    </ng-image-slider>
+                    <div class="product-cards">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="offer">Save20%</div>
+                                <img src="assets\image\cleansers-1-1.webp">
+                                <img class="hover-img" src="assets\image\cleansers-1-2.webp">
+                            </div>
+                            <div class="product-title">
+                                Simple Kind To Skin Refreshing<br>Facial Wash 150 ml 
+                            </div>
+                            <div class="MRP">
+                                MRP:<s>₹375</s><b>₹300</b>
+                            </div>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                            <div class="add-to-cart">
+                                <a routerLink="/" routerLinkActive="active">ADD TO CART</a>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="offer">Save20%</div>
+                                <img src="assets\image\cleansers-2-1.webp">
+                                <img class="hover-img" src="assets\image\cleansers-2-2.webp">
+                            </div>
+                            <div class="product-title">
+                                Simple Kind To Skin<br>Moisturising Facial Wash<br>150ml
+                            </div>
+                            <div class="MRP">
+                                MRP:<s>₹375</s><b>₹300</b>
+                            </div>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                            <div class="add-to-cart">
+                                <a routerLink="/" routerLinkActive="active">ADD TO CART</a>
+                            </div>
+                        </div>
+                
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="offer">Save20%</div>
+                                <img src="assets\image\cleansers-3-1.webp">
+                                <img class="hover-img" src="assets\image\cleansers-3-2.webp">
+                            </div>
+                            <div class="product-title">
+                                Simple Daily Skin Detox Clear<br>Pore Facial Scrub 150ml 
+                            </div>
+                            <div class="MRP">
+                                MRP:<s>₹425</s><b>₹340</b>
+                            </div>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                            <div class="add-to-cart">
+                                <a routerLink="/" routerLinkActive="active">ADD TO CART</a>
+                            </div>
+                        </div>
+                
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="sold-out">Sold out</div>
+                                <img src="assets\image\cleansers-4-1.webp">
+                                <img class="hover-img" src="assets\image\cleansers-4-2.webp">
+                            </div>
+                            <div class="product-title">
+                                Simple Daily Skin Detox<br>Purifying Facial Wash 150ml 
+                            </div>
+                            <div class="MRP">
+                                MRP:<s>₹425</s><b>₹375</b>
+                            </div>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                            <div class="sold-out-btn">
+                                <a routerLink="/" routerLinkActive="active">SOLD OUT</a>
+                            </div>
+                        </div>
+                        <div class="product-card"></div>
+                    </div>
                 </mat-tab>
                 <mat-tab label="Moisturisers">
-                    <ng-image-slider 
-                        [images]="imgCollection" 
-                        [imageSize]="{width: 250, height: 450, space: 10}"
-                        [infinite]="true"
-                        [animationSpeed]="0.3"
-                        [lazyLoading]="true"
-                        [slideImage]="2"
-                    #nav>
-                    </ng-image-slider>
+                    <div class="product-cards">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="offer">Save20%</div>
+                                <img src="assets\image\moisturisers-1-1.webp">
+                                <img class="hover-img" src="assets\image\moisturisers-1-2.webp">
+                            </div>
+                            <div class="product-title">
+                                Simple Kind To Skin Hydrating<br>Light Moisturiser 125ml 
+                            </div>
+                            <div class="MRP">
+                                MRP:<s>₹430</s><b>₹344</b>
+                            </div>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                            <div class="add-to-cart">
+                                <a routerLink="/" routerLinkActive="active">ADD TO CART</a>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="offer">Save20%</div>
+                                <img src="assets\image\moisturisers-2-1.webp">
+                                <img class="hover-img" src="assets\image\moisturisers-2-2.webp">
+                            </div>
+                            <div class="product-title">
+                                Simple Kind To Skin Protecting<br>Light Moisturiser 125ml 
+                            </div>
+                            <div class="MRP">
+                                MRP:<s>₹460</s><b>₹368</b>
+                            </div>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                            <div class="add-to-cart">
+                                <a routerLink="/" routerLinkActive="active">ADD TO CART</a>
+                            </div>
+                        </div>
+                
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="offer">Save20%</div>
+                                <img src="assets\image\moisturisers-3-1.webp">
+                                <img class="hover-img" src="assets\image\moisturisers-3-2.webp">
+                            </div>
+                            <div class="product-title">
+                                Simple Kind To Skin<br> Replenishing Rich Moisturiser<br>125ml 
+                            </div>
+                            <div class="MRP">
+                                MRP:<s>₹450</s><b>₹360</b>
+                            </div>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                            <div class="add-to-cart">
+                                <a routerLink="/" routerLinkActive="active">ADD TO CART</a>
+                            </div>
+                        </div>
+                
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="offer">Save20%</div>
+                                <img src="assets\image\moisturisers-4-1.webp">
+                                <img class="hover-img" src="assets\image\moisturisers-4-2.webp">
+                            </div>
+                            <div class="product-title">
+                                Simple Daily Skin Detox SOS<br> Clearing Booster 25ml 
+                            </div>
+                            <div class="MRP">
+                                MRP:<s>₹300</s><b>₹240</b>
+                            </div>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                            <div class="add-to-cart">
+                                <a routerLink="/" routerLinkActive="active">ADD TO CART</a>
+                            </div>
+                        </div>
+                        <div class="product-card"></div>
+                    </div>
                 </mat-tab>
                 <mat-tab label="Toner">
-                    <ng-image-slider 
-                        [images]="imgCollection" 
-                        [imageSize]="{width: 250, height: 450, space: 10}"
-                        [infinite]="true"
-                        [animationSpeed]="0.3"
-                        [lazyLoading]="true"
-                        [slideImage]="2"
-                    #nav>
-                    </ng-image-slider>
+                    <div class="product-cards">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="offer">Save20%</div>
+                                <img src="assets\image\toner-1-1.webp">
+                                <img class="hover-img" src="assets\image\toner-1-2.webp">
+                            </div>
+                            <div class="product-title">
+                                Simple Booster Serum - 10%<br>Vitamin C+E+F 30ml 
+                            </div>
+                            <div class="MRP">
+                                MRP:<s>₹675</s><b>₹540</b>
+                            </div>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                            <div class="add-to-cart">
+                                <a routerLink="/" routerLinkActive="active">ADD TO CART</a>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="offer">Save20%</div>
+                                <img src="assets\image\toner-2-1.webp">
+                                <img class="hover-img" src="assets\image\toner-2-2.webp">
+                            </div>
+                            <div class="product-title">
+                                Simple Booster Serum - 10%<br>Hemp seed oil + B3 30ml 
+                            </div>
+                            <div class="MRP">
+                                MRP:<s>₹675</s><b>₹540</b>
+                            </div>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                            <div class="add-to-cart">
+                                <a routerLink="/" routerLinkActive="active">ADD TO CART</a>
+                            </div>
+                        </div>
+                
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="offer">Save25%</div>
+                                <img src="assets\image\toner-3-1.webp">
+                                <img class="hover-img" src="assets\image\toner-3-2.webp">
+                            </div>
+                            <div class="product-title">
+                                Simple Booster Serum - 3%<br>Hyaluronic Acid + B5 30ml  
+                            </div>
+                            <div class="MRP">
+                                MRP:<s>₹675</s><b>₹506</b>
+                            </div>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                            <div class="add-to-cart">
+                                <a routerLink="/" routerLinkActive="active">ADD TO CART</a>
+                            </div>
+                        </div>
+                
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="offer">Save25%</div>
+                                <img src="assets\image\toner-4-1.webp">
+                                <img class="hover-img" src="assets\image\toner-4-2.webp">
+                            </div>
+                            <div class="product-title">
+                                Simple Booster Serum - 3%<br>Hyaluronic Acid + B5 30ml  
+                            </div>
+                            <div class="MRP">
+                                MRP:<s>₹675</s><b>₹506</b>
+                            </div>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                            <div class="add-to-cart">
+                                <a routerLink="/" routerLinkActive="active">ADD TO CART</a>
+                            </div>
+                        </div>
+                        <div class="product-card"></div>
+                    </div>
                 </mat-tab>
                 <mat-tab label="Wipes">
-                    <ng-image-slider 
-                        [images]="imgCollection" 
-                        [imageSize]="{width: 250, height: 450, space: 10}"
-                        [infinite]="true"
-                        [animationSpeed]="0.3"
-                        [lazyLoading]="true"
-                        [slideImage]="2"
-                    #nav>
-                    </ng-image-slider>
+                    <div class="product-cards">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets\image\wipes-1-1.webp">
+                                <img class="hover-img" src="assets\image\wipes-1-2.webp">
+                            </div>
+                            <div class="product-title">
+                                Simple Kind To Skin Cleansing<br>Facial Wipes - 25 wipes 
+                            </div>
+                            <div class="MRP">
+                                MRP:<b>₹325</b>
+                            </div>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                            <div class="add-to-cart">
+                                <a routerLink="/" routerLinkActive="active">ADD TO CART</a>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets\image\wipes-2-1.webp">
+                                <img class="hover-img" src="assets\image\wipes-2-2.webp">
+                            </div>
+                            <div class="product-title">
+                                Simple Kind To Skin Micellar<br>Cleansing Wipes - 25 wipes
+                            </div>
+                            <div class="MRP">
+                                MRP:<s>₹350</s><b>₹280</b>
+                            </div>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                            <div class="add-to-cart">
+                                <a routerLink="/" routerLinkActive="active">ADD TO CART</a>
+                            </div>
+                        </div>
+                        <div class="product-card"></div>
+                        <div class="product-card"></div>
+                        <div class="product-card"></div>
+                    </div>
                 </mat-tab>
                 <mat-tab label="Combos">
-                    <ng-image-slider 
-                        [images]="imgCollection" 
-                        [imageSize]="{width: 250, height: 450, space: 10}"
-                        [infinite]="true"
-                        [animationSpeed]="0.3"
-                        [lazyLoading]="true"
-                        [slideImage]="2"
-                    #nav>
-                    </ng-image-slider>
+                    <div class="product-cards">
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="offer">Save25%</div>
+                                <img src="assets\image\combos-1-1.webp">
+                                <img class="hover-img" src="assets\image\combos-1-2.webp">
+                            </div>
+                            <div class="product-title">
+                                Simple Kind to Skin Refresh &<br> Hydrate Combo 
+                            </div>
+                            <div class="MRP">
+                                MRP:<s>₹805</s><b>₹603</b>
+                            </div>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                            <div class="add-to-cart">
+                                <a routerLink="/" routerLinkActive="active">ADD TO CART</a>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="offer">Save25%</div>
+                                <img src="assets\image\combos-2-1.webp">
+                                <img class="hover-img" src="assets\image\combos-2-2.webp">
+                            </div>
+                            <div class="product-title">
+                                Simple Kind to Skin Refreshing<br>Facial Wash (Pack of 2)
+                            </div>
+                            <div class="MRP">
+                                MRP:<s>₹750</s><b>₹562</b>
+                            </div>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                            <div class="add-to-cart">
+                                <a routerLink="/" routerLinkActive="active">ADD TO CART</a>
+                            </div>
+                        </div>
+                
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="offer">Save25%</div>
+                                <img src="assets\image\combos-3-1.webp">
+                                <img class="hover-img" src="assets\image\combos-3-2.webp">
+                            </div>
+                            <div class="product-title">
+                                Simple Kind to Skin Moisturise<br>& Protect Combo 
+                            </div>
+                            <div class="MRP">
+                                MRP:<s>₹835</s><b>₹626</b>
+                            </div>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                            <div class="add-to-cart">
+                                <a routerLink="/" routerLinkActive="active">ADD TO CART</a>
+                            </div>
+                        </div>
+                
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="offer">Save25%</div>
+                                <img src="assets\image\combos-4-1.webp">
+                                <img class="hover-img" src="assets\image\combos-4-2.webp">
+                            </div>
+                            <div class="product-title">
+                                Simple Kind to Skin<br>Moisturising Facial Wash<br>Combo (Pack of 2)  
+                            </div>
+                            <div class="MRP">
+                                MRP:<s>₹750</s><b>₹563</b>
+                            </div>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                            <div class="add-to-cart">
+                                <a routerLink="/" routerLinkActive="active">ADD TO CART</a>
+                            </div>
+                        </div>
+                         <div class="product-card">
+                            <div class="product-image">
+                                <div class="offer">Save25%</div>
+                                <img src="assets\image\combos-5-1.webp">
+                                <img class="hover-img" src="assets\image\combos-5-2.webp">
+                            </div>
+                            <div class="product-title">
+                                Simple Kind to Skin Double<br> Cleanse Combo
+                            </div>
+                            <div class="MRP">
+                                MRP:<s>₹800</s><b>₹600</b>
+                            </div>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                            <div class="add-to-cart">
+                                <a routerLink="/" routerLinkActive="active">ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div>
                 </mat-tab>
                 <mat-tab label="All Products">
                     <ng-image-slider 
-                        [images]="imgCollection" 
+                        [slideImage]="bestSellers1" 
                         [imageSize]="{width: 250, height: 450, space: 10}"
                         [infinite]="true"
                         [animationSpeed]="0.3"
@@ -130,7 +631,7 @@
               
         </div>
         <div class="all-products-btn">
-            <a routerLink="all-products" routerLinkActive="active">ALL PRODUCTS</a>
+            <a routerLink="demo" routerLinkActive="active">ALL PRODUCTS</a>
         </div>
     </div>
 

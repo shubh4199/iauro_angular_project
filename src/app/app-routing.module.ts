@@ -5,6 +5,7 @@ import { BestsellersComponent } from './bestsellers/bestsellers.component';
 import { CleansersComponent } from './cleansers/cleansers.component';
 import { CombosComponent } from './combos/combos.component';
 import { DefaultComponent } from './default/default.component';
+import { DemoComponent } from './demo/demo.component';
 import { MoisturisersComponent } from './moisturisers/moisturisers.component';
 import { SerumsComponent } from './serums/serums.component';
 import { SimplePhilosophyComponent } from './simple-philosophy/simple-philosophy.component';
@@ -185,6 +186,8 @@ const routes: Routes = [
   {path: 'simple-philosophy/skincare-tips/skincare-tips2', redirectTo:'skincare-tips/skincare-tips2'},
   {path: 'skincare-tips/skincare-tips/skincare-tips2', redirectTo:'skincare-tips/skincare-tips2'},
   {path: 'skincare-tips/skincare-tips2/skincare-tips/skincare-tips2', redirectTo:'skincare-tips/skincare-tips2'},
+
+  {path: 'demo', component: DemoComponent},
   
 ];
 
